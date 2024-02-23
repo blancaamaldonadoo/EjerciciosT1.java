@@ -3,8 +3,8 @@ el número de horas que tiene un día, el número de minutos que tiene una hora 
 el número de segundos que tiene un minuto. Emplear las variables que ocupen el mínimo espacio
  de memoria posible. A continuación, calcular el número de segundos que tiene un año 
  y almacenar el valor del cálculo en otra variable. 
- Realizar preferiblemente mediante unafunción que reciba como parámetros el número de años, meses
- y días ydevuelva el número de segundos de los días, meses y años introducidos.*/
+ Realizar preferiblemente mediante una función que reciba como parámetros el número de años, meses
+ y días y devuelva el número de segundos de los días, meses y años introducidos.*/
 
  public static void main(){
   int dias_ano=365;
@@ -12,7 +12,15 @@ el número de segundos que tiene un minuto. Emplear las variables que ocupen el 
   int minutos_hora=60;
   int segundos_minuto=60;
 
-  int segundos_Ano= dias_ano*horas_dias*minutos_hora*segundos_minuto;
+  int segundos_Ano= dias_ano*horas_dia*minutos_hora*segundos_minuto;
+
+  int segsAno(int anos, int meses, int dias){
+
+    int segstotales= (anos*dias_ano*horas_dia*minutos_hora*segundos_minuto)+(meses*31*horas_dia*minutos_hora*segundos_minuto)
+    +(dias*horas_dia*minutos_hora*segundos_minuto)
+
+    return segstotales;
+  }
   
  }
 
